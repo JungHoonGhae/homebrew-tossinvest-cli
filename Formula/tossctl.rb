@@ -1,18 +1,18 @@
 class Tossctl < Formula
   desc "Unofficial CLI for Toss Securities web workflows"
   homepage "https://github.com/JungHoonGhae/tossinvest-cli"
-  version "0.1.3"
+  version "0.1.5"
   license "MIT"
 
   depends_on "python@3.11"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/JungHoonGhae/tossinvest-cli/releases/download/v0.1.3/tossctl-darwin-arm64.tar.gz"
-      sha256 "ef85e7aea58f5f6059c89c7b9db1965c3c9cc6b852819a7113e9a4a9fd86857e"
+      url "https://github.com/JungHoonGhae/tossinvest-cli/releases/download/v0.1.5/tossctl-darwin-arm64.tar.gz"
+      sha256 "35f83da5327da9d042e11f3e4ea76463bc5ef94ceee8c1e14d5cd22ae370c199"
     else
-      url "https://github.com/JungHoonGhae/tossinvest-cli/releases/download/v0.1.3/tossctl-darwin-amd64.tar.gz"
-      sha256 "8cebe257d0f2fbf058d4050368bf72f9c21d17f5386f5e59010a6bf201ecfc21"
+      url "https://github.com/JungHoonGhae/tossinvest-cli/releases/download/v0.1.5/tossctl-darwin-amd64.tar.gz"
+      sha256 "3f52817f6ad3229d69e023797d4230b9bb05cc813d84f1b23992e125f628bad6"
     end
   end
 
