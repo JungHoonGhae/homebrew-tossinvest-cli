@@ -16,6 +16,16 @@ class Tossctl < Formula
     end
   end
 
+  on_linux do
+    if Hardware::CPU.arm?
+      url "https://github.com/JungHoonGhae/tossinvest-cli/releases/download/v0.5.1/tossctl-linux-arm64.tar.gz"
+      sha256 "8bcdbf7a1fdbaffc55848a3b40445561e73d185713ceb6ce4f82ce4dfd4ff471"
+    else
+      url "https://github.com/JungHoonGhae/tossinvest-cli/releases/download/v0.5.1/tossctl-linux-amd64.tar.gz"
+      sha256 "8f6115ed6c12b0d825e696c6e8a84b2efa4ac916f579fe6d02737564db012c66"
+    end
+  end
+
   def install
     libexec.install "tossctl"
     libexec.install "auth-helper"
