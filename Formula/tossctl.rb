@@ -1,28 +1,28 @@
 class Tossctl < Formula
   desc "Unofficial CLI for Toss Securities web workflows"
   homepage "https://github.com/JungHoonGhae/tossinvest-cli"
-  version "0.55.0"
+  version "0.56.0"
   license "MIT"
 
   depends_on "python@3.11"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/JungHoonGhae/tossinvest-cli/releases/download/v0.55.0/tossctl-darwin-arm64.tar.gz"
-      sha256 "ec2f47b01af0d36fd8f289fd6a66f89dc22219d865991e996372c2b155be1677"
+      url "https://github.com/JungHoonGhae/tossinvest-cli/releases/download/v0.56.0/tossctl-darwin-arm64.tar.gz"
+      sha256 "26e69ac693645e2356346710afddebb31e2f4c47d514e1a3627b844d8aec56ad"
     else
-      url "https://github.com/JungHoonGhae/tossinvest-cli/releases/download/v0.55.0/tossctl-darwin-amd64.tar.gz"
-      sha256 "784a0456d46d93df24687ba61929e1bf5d5463492b915c23819ad3c9088be2d5"
+      url "https://github.com/JungHoonGhae/tossinvest-cli/releases/download/v0.56.0/tossctl-darwin-amd64.tar.gz"
+      sha256 "4852e412ca555846e04029dd6d561261aa71a944091dcca8345618620ad163c1"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/JungHoonGhae/tossinvest-cli/releases/download/v0.55.0/tossctl-linux-arm64.tar.gz"
-      sha256 "b67ee9c0f7353ea1ed9221ef7a9447ac7275b22db8f3d7b84ab748e89da0a093"
+      url "https://github.com/JungHoonGhae/tossinvest-cli/releases/download/v0.56.0/tossctl-linux-arm64.tar.gz"
+      sha256 "7d493200bdd6f7ea947c9cfd2ad587470888d449297519f67f00f3acfef0ca3d"
     else
-      url "https://github.com/JungHoonGhae/tossinvest-cli/releases/download/v0.55.0/tossctl-linux-amd64.tar.gz"
-      sha256 "2c4f9146d7463786c9642fbbef40c31a0b9bf32eefe6d1145ff4ac004a6ca004"
+      url "https://github.com/JungHoonGhae/tossinvest-cli/releases/download/v0.56.0/tossctl-linux-amd64.tar.gz"
+      sha256 "ab3af17872feb9dc4262db66fa132eff235d060e8c7fcc50c6e3ec0c5e7e6928"
     end
   end
 
